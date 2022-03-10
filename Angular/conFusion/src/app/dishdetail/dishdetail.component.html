@@ -17,14 +17,17 @@
           <img mat-card-image src={{dish.image}} alt={{dish.name}}>
           <mat-card-content>
               <p>{{dish.description}}</p>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
           </mat-card-content>
       </mat-card>
     </div>
   </div>
 
-  <div fxFlex="40">
-    <h2>Comments</h2>
-    <mat-list>
+  <div fxFlex="40" >
+    
+    <mat-list *ngIf="dish">
+      <h2>Comments</h2>
       <mat-list-item *ngFor="let comment of dish.comments">
         <p matLine>{{comment.comment}}</p>
         <p matLine>{{comment.rating}} Stars</p>
