@@ -17,6 +17,7 @@
           <img mat-card-image src={{dish.image}} alt={{dish.name}}>
           <mat-card-content>
               <p>{{dish.description}}</p>
+              <button mat-button (click)="goBack()">BACK</button>
               <button mat-button>LIKE</button>
               <button mat-button>SHARE</button>
           </mat-card-content>
