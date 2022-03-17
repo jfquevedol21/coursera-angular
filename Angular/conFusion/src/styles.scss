@@ -15,6 +15,10 @@ body{
     margin:20px;
     display:flex;
 }
+.center {
+  display: flex;
+  align-content: center;
+}
 
 $lt-gray: #ddd;
 $background-dark: #512DA8;
